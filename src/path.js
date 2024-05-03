@@ -288,9 +288,6 @@ export default class I18nPath {
       let last: any = obj
       let i: number = 0
       while (i < length) {
-        if (!Object.prototype.hasOwnProperty.call(last, paths[i])) {
-          return null
-        }
         const value: any = last[paths[i]]
         if (value === undefined || value === null) {
           return null

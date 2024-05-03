@@ -165,7 +165,8 @@ export default class VueI18n {
       if (!message || !key) { return false }
       if (!isNull(this._path.getPathValue(message, key))) { return true }
       // fallback for flat key
-      return Object.prototype.hasOwnProperty.call(message, key)
+      if (message[key]) { return true }
+      return false
     }
 
     if (this._warnHtmlInMessage === 'warn' || this._warnHtmlInMessage === 'error') {
