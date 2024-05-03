@@ -663,14 +663,14 @@ describe('basic', () => {
 
     describe('builtin property handling', () => {
       [
-        //'__proto__',
-        //'constructor',
-        //'hasOwnProperty',
-        //'isPrototypeOf',
-        //'propertyIsEnumerable',
-        //'toLocaleString',
+        '__proto__', // REVIEW: controversial? __proto__ currently behaves weirdly
+        'constructor',
+        'hasOwnProperty',
+        'isPrototypeOf',
+        'propertyIsEnumerable',
+        'toLocaleString',
         'toString',
-        //'valueOf'
+        'valueOf'
       ].forEach(k => {
         describe('top-level props', () => {
           describe('existing key', () => {
