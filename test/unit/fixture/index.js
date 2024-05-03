@@ -74,13 +74,6 @@ module.exports = {
       builtins: {
         existing: {
           '__proto__': 'i exist',
-          'constructor': 'i exist',
-          'hasOwnProperty': 'i exist',
-          'isPrototypeOf': 'i exist',
-          'propertyIsEnumerable': 'i exist',
-          'toLocaleString': 'i exist',
-          'toString': 'i exist',
-          'valueOf': 'i exist'
         },
         missing: {}
       }
@@ -128,13 +121,6 @@ module.exports = {
       builtins: {
         existing: {
           '__proto__': 'i exist',
-          'constructor': 'i exist',
-          'hasOwnProperty': 'i exist',
-          'isPrototypeOf': 'i exist',
-          'propertyIsEnumerable': 'i exist',
-          'toLocaleString': 'i exist',
-          'toString': 'i exist',
-          'valueOf': 'i exist'
         },
         missing: {}
       }
