@@ -321,7 +321,7 @@ describe('issues', () => {
     })
   })
 
-  describe('#349', () => {
+  describe.only('#349', () => {
     it('should be existed', done => {
       assert(vm.$te('foo.bar.buz') === true)
       done()
@@ -372,7 +372,7 @@ describe('issues', () => {
     })
   })
 
-  describe('#398', () => {
+  describe.only('#398', () => {
     it('should return true', () => {
       assert.strictEqual(vm.$te('0123a'), true)
       assert.strictEqual(vm.$te('01234'), true)
@@ -640,7 +640,7 @@ describe('issues', () => {
     })
   })
 
-  describe('#468', () => {
+  describe.only('#468', () => {
     it('should be existed', done => {
       assert(vm.$te('hello world') === true)
       done()
@@ -690,7 +690,7 @@ describe('issues', () => {
     })
   })
 
-  describe('#515', () => {
+  describe.only('#515', () => {
     it('$te should return true for empty string', () => {
       assert.strictEqual(vm.$te('message.empty'), true)
     })
