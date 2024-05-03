@@ -165,7 +165,6 @@ export default class VueI18n {
       if (!message || !key) { return false }
       if (!isNull(this._path.getPathValue(message, key))) { return true }
       // fallback for flat key
-      // TODO this should use hasOwnProperty
       return Object.prototype.hasOwnProperty.call(message, key)
     }
 

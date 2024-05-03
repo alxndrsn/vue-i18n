@@ -288,7 +288,6 @@ export default class I18nPath {
       let last: any = obj
       let i: number = 0
       while (i < length) {
-        // check hasOwnProperty here
         if (!Object.prototype.hasOwnProperty.call(last, paths[i])) {
           return null
         }
